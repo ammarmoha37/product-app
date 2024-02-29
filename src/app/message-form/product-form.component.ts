@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-product-form',
-  templateUrl: './product-form.component.html',
-  styleUrl: './product-form.component.scss'
+  selector: 'app-message-form',
+  templateUrl: './message-form.component.html',
+  styleUrl: './message-form.component.scss'
 })
-export class ProductFormComponent {
+export class MessageFormComponent {
   name: string;
   email: string;
   message: string;
