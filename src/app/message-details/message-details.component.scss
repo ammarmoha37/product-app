@@ -19,3 +19,14 @@
   padding: 10px;
   border-radius: 0 0 4px 4px;
 }
+
+button[type="delete"] {
+  display: block;
+  margin: auto;
+  padding: 5px 10px;
+  background-color: #c63939;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}

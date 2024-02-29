@@ -5,5 +5,9 @@
   </div>
   <div class="message-content">
     <p>{{ message.message }}</p>
+    <button
+      type="delete"
+      (click)="onDelete()"
+    >Delete</button>
   </div>
 </div>
