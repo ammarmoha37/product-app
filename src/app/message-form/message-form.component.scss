@@ -1,5 +1,5 @@
 .form-container {
-  max-width: 400px;
+  max-width: 100%;
   margin: auto;
   padding: 20px;
   border: 1px solid #ccc;
@@ -12,7 +12,7 @@ h2 {
 }
 
 .form-group {
-  margin-bottom: 15px;
+  margin: 15px 20px 15px 5px;
 }
 
 label {
@@ -67,6 +67,5 @@ tbody tr:nth-child(even) {
 .flex-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   flex-wrap: wrap;
 }
