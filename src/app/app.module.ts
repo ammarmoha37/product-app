@@ -8,6 +8,8 @@ import { FormsModule } from '@angular/forms';
 import { MessageDetailsComponent } from './message-details/message-details.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { AboutComponent } from './about/about.component';
+import { ProductsComponent } from './products/products.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -15,12 +17,14 @@ import { AboutComponent } from './about/about.component';
     MessageFormComponent,
     MessageDetailsComponent,
     NavigationComponent,
-    AboutComponent
+    AboutComponent,
+    ProductsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
