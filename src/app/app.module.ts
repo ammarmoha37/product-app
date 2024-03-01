@@ -6,12 +6,16 @@ import { AppComponent } from './app.component';
 import { MessageFormComponent } from './message-form/message-form.component';
 import { FormsModule } from '@angular/forms';
 import { MessageDetailsComponent } from './message-details/message-details.component';
+import { NavigationComponent } from './navigation/navigation.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MessageFormComponent,
-    MessageDetailsComponent
+    MessageDetailsComponent,
+    NavigationComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
