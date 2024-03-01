@@ -3,6 +3,8 @@
   color: #fff;
   padding: 10px;
   border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
 }
 
 ul {
@@ -28,5 +30,9 @@ a {
 }
 
 a:hover {
-  background-color: #555;
+  background-color: #6a6a6a;
+}
+
+.new-product>a {
+  font-weight: bolder;
 }

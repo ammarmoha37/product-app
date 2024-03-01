@@ -10,6 +10,7 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { AboutComponent } from './about/about.component';
 import { ProductsComponent } from './products/products.component';
 import { HttpClientModule } from '@angular/common/http';
+import { NewProductComponent } from './new-product/new-product.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { HttpClientModule } from '@angular/common/http';
     MessageDetailsComponent,
     NavigationComponent,
     AboutComponent,
-    ProductsComponent
+    ProductsComponent,
+    NewProductComponent
   ],
   imports: [
     BrowserModule,
