@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MessagesService } from '../services/messages.service';
 
 @Component({
   selector: 'app-message-form',
@@ -12,9 +13,14 @@ export class MessageFormComponent {
   isSubmitted: boolean = false;
   messages: {}[] = [];
 
+  constructor(private messageService: MessagesService) {
+    this.messages = this.messageService.getAllMessages();
+    this.isSubmitted = this.messages.length > 0;
+  }
+
   onSubmit() {
     this.isSubmitted = true;
-    this.messages.push({
+    this.messageService.insert({
       'name': this.name,
       'email': this.email,
       'message': this.message,
@@ -22,6 +28,6 @@ export class MessageFormComponent {
   }
 
   deleteMessage(index: number) {
-    this.messages.splice(index, 1);
+    this.messageService.deleteMessage(index);
   }
 }
